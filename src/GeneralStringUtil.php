@@ -5,11 +5,11 @@ declare(strict_types=1);
 namespace Constup\StringUtils;
 
 /**
- * Class General
+ * Class GeneralStringUtil
  *
  * @package Constup\StringUtils
  */
-class General
+class GeneralStringUtil
 {
     /**
      * @param string $source_string

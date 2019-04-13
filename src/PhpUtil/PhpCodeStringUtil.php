@@ -4,14 +4,14 @@ declare(strict_types=1);
 
 namespace Constup\StringUtils\PhpUtil;
 
-use Constup\StringUtils\General;
+use Constup\StringUtils\GeneralStringUtil;
 
 /**
- * Class PhpCode
+ * Class PhpCodeStringUtil
  *
  * @package Constup\StringUtils\PhpUtil
  */
-class PhpCode
+class PhpCodeStringUtil
 {
     /**
      * @param string $source_string
@@ -37,7 +37,7 @@ class PhpCode
      */
     public static function generateGetterNameFromPropertyName(string $source_string): string
     {
-        return  'get' . General::snakeToCamel($source_string, true);
+        return  'get' . GeneralStringUtil::snakeToCamel($source_string, true);
     }
 
     /**
@@ -46,6 +46,6 @@ class PhpCode
      */
     public static function generateSetterNameFromPropertyName(string $source_string): string
     {
-        return 'set' . General::snakeToCamel($source_string, true);
+        return 'set' . GeneralStringUtil::snakeToCamel($source_string, true);
     }
 }
