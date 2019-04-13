@@ -1,0 +1,24 @@
+{
+    "name": "constup/string-utils",
+    "description": "PHP string utilities",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Constup",
+            "email": "16638173+constup@users.noreply.github.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Constup\\StringUtils\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Constup\\StringUtils\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {}
+}
