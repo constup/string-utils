@@ -48,4 +48,13 @@ class PhpCodeStringUtil
     {
         return 'set' . GeneralStringUtil::snakeToCamel($source_string, true);
     }
+
+    /**
+     * @param string $source_string
+     * @return string
+     */
+    public static function generateWitherNameFromPropertyName(string $source_string): string
+    {
+        return 'with' . GeneralStringUtil::snakeToCamel($source_string, true);
+    }
 }
